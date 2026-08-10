@@ -1123,8 +1123,9 @@ img {
 @media (max-width: 992px) {
   .hero-section {
     background-attachment: scroll !important;
-    background-position: left center !important;
-    background-size: cover !important;
+    background-size: 160% auto !important;
+    background-position: 35% 35% !important;
+    background-repeat: no-repeat !important;
     min-height: 85vh;
     padding-top: 5.5rem;
     padding-bottom: 3rem;
@@ -1152,6 +1153,13 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll !important;
+    background-size: 175% auto !important;
+    background-position: 36% 30% !important;
+    background-repeat: no-repeat !important;
+  }
+
   .navbar {
     padding: 0.6rem 0;
   }
@@ -1233,6 +1241,13 @@ img {
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    background-attachment: scroll !important;
+    background-size: 190% auto !important;
+    background-position: 38% 26% !important;
+    background-repeat: no-repeat !important;
+  }
+
   .brand-logo {
     font-size: 1.05rem;
   }
