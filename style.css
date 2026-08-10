@@ -1080,6 +1080,31 @@ img {
   gap: 1rem;
 }
 
+.developer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+}
+
+.developer-credit strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.alien-favicon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.developer-credit:hover .alien-favicon {
+  transform: scale(1.2) rotate(8deg);
+}
+
 /* Floating WhatsApp Button */
 .whatsapp-float {
   position: fixed;
