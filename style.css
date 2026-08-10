@@ -360,6 +360,50 @@ img {
   box-shadow: var(--shadow-card), 0 0 50px rgba(255, 42, 68, 0.15);
 }
 
+.agenda-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.agenda-title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.agenda-desc {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.agenda-features-flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.agenda-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+.agenda-ctas-flex {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
 .hero-content h1 {
   font-size: clamp(2.5rem, 4.5vw, 3.8rem);
   line-height: 1.15;
@@ -1234,11 +1278,106 @@ img {
   }
 
   .hero-card-float {
-    padding: 1.5rem;
+    padding: 1.5rem 1.1rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 0.35rem;
+    padding-top: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .stat-item {
+    flex: 1;
+    text-align: center;
+    min-width: 0;
+    padding: 0 0.15rem;
+  }
+
+  .stat-item h4 {
+    font-size: 1.3rem !important;
+    line-height: 1.1;
+    white-space: nowrap;
+    margin-bottom: 0.2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.62rem !important;
+    letter-spacing: 0.02em;
+    word-break: break-word;
+    line-height: 1.25;
+    color: var(--text-subtle);
   }
 
   .calculator-card {
     padding: 1.25rem;
+  }
+
+  .agenda-card-lg {
+    padding: 1.75rem 1.1rem !important;
+    text-align: center;
+  }
+
+  .agenda-header-flex {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .agenda-title {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0.85rem;
+  }
+
+  .agenda-desc {
+    font-size: 0.95rem !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .agenda-features-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .agenda-feature-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .agenda-ctas-flex {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .agenda-ctas-flex .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .agenda-card-lg .city-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.85rem !important;
+    text-align: center;
+    white-space: normal;
   }
 
   .option-btn {
@@ -1279,5 +1418,13 @@ img {
 
   .stat-number {
     font-size: 1.8rem;
+  }
+
+  .stat-item h4 {
+    font-size: 1.2rem !important;
+  }
+
+  .stat-item p {
+    font-size: 0.58rem !important;
   }
 }
