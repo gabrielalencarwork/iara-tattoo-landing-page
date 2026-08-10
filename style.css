@@ -1122,9 +1122,16 @@ img {
 /* Responsive Media Queries & Mobile Optimizations */
 @media (max-width: 992px) {
   .hero-section {
+    background-image: 
+      linear-gradient(to bottom, rgba(9, 9, 11, 0.35) 0%, transparent 45%, rgba(9, 9, 11, 0.95) 100%),
+      url('assets/hero-mobile-bg.png'),
+      url('assets/hero-mobile-bg.jpg'),
+      url('assets/50f2a0fb1bf3fd0eab4014b993b1ca33.jpg'),
+      url('50f2a0fb1bf3fd0eab4014b993b1ca33.jpg'),
+      url('assets/studio-neon-hero.jpg') !important;
     background-attachment: scroll !important;
-    background-size: 160% auto !important;
-    background-position: 35% 35% !important;
+    background-position: center top !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     min-height: 85vh;
     padding-top: 5.5rem;
@@ -1155,8 +1162,8 @@ img {
 @media (max-width: 768px) {
   .hero-section {
     background-attachment: scroll !important;
-    background-size: 175% auto !important;
-    background-position: 36% 30% !important;
+    background-position: center top !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
   }
 
@@ -1243,8 +1250,8 @@ img {
 @media (max-width: 480px) {
   .hero-section {
     background-attachment: scroll !important;
-    background-size: 190% auto !important;
-    background-position: 38% 26% !important;
+    background-position: center top !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
   }
 
