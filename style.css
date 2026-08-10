@@ -267,6 +267,7 @@ img {
   background-image: 
     linear-gradient(to bottom, rgba(9, 9, 11, 0.4) 0%, transparent 40%, rgba(9, 9, 11, 0.9) 100%),
     url('assets/studio-neon-hero.jpg'),
+    url('assets/Fundo estudio com nome.jpg'),
     url('Fundo estudio com nome.jpg'),
     url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1920&q=80');
   background-position: center center;
@@ -1118,8 +1119,17 @@ img {
   cursor: pointer;
 }
 
-/* Responsive Media Queries */
+/* Responsive Media Queries & Mobile Optimizations */
 @media (max-width: 992px) {
+  .hero-section {
+    background-attachment: scroll !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    min-height: 85vh;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+  }
+
   .hero-grid, .artist-grid, .modal-content {
     grid-template-columns: 1fr;
   }
@@ -1141,16 +1151,111 @@ img {
   }
 }
 
-@media (max-width: 600px) {
-  .hero-ctas {
-    flex-direction: column;
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.6rem 0;
   }
 
-  .btn {
+  .nav-container {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
     width: 100%;
   }
 
-  .calculator-card {
+  .brand-logo {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .brand-logo span {
+    font-size: 1.2rem;
+  }
+
+  .nav-cta {
+    padding: 0.5rem 0.85rem !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    line-height: 1;
+    border-radius: 9999px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: normal;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .btn i {
+    flex-shrink: 0;
+  }
+
+  .calc-submit-btn, .hero-ctas .btn {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.25;
+    padding: 0.95rem 1.2rem;
+  }
+
+  .hero-card-float {
     padding: 1.5rem;
+  }
+
+  .calculator-card {
+    padding: 1.25rem;
+  }
+
+  .option-btn {
+    padding: 0.85rem 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 1.05rem;
+  }
+
+  .brand-logo span {
+    font-size: 1.05rem;
+  }
+
+  .nav-cta {
+    padding: 0.45rem 0.75rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+    line-height: 1.2;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
   }
 }
